@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrangeiros</title>
+</head>
+<body>
+    <h1>Identificação de estrangeiros</h1>
+    País de Origem: <input type="text" name="txtp" id="txtp">
+    <input type="button" value="Verificar" onclick="verificar()"> <!--Criação do evento-->
+
+<div id="res">
+
+</div>
+
+<script>
+    function verificar(){
+        var pais = window.document.getElementById('txtp').value; // Este value serve para pegar o valor do input digitado
+        var resultado = window.document.querySelector('div#res')
+        resultado.innerHTML = `<p>Seu país natal é ${pais}</p>`
+        if (pais.toLowerCase() != "brasil"){ //Utiliza a função "toLowerCase()" para converter todos os caracteres digitados pelo cliente em minúsculas, pois assim vc garante que se caso o usuário digitar "Brasil ou brasil" ambas serão transformadas em minúsculas e coincidirão com o "brasil" entre aspas.Entenda quem em JS a string "Brasil" é diferente da "brasil", logo se não fizer essa transformação os resultados dariam erro
+            resultado.innerHTML += `<p>Você não brasileiro!</p>`
+        } else {
+            resultado.innerHTML += `<p>Você é brasileiro</p>`
+        }
+
+    }
+</script>
+</body>
+</html>
