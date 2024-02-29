@@ -15,6 +15,8 @@ section{
     width: 500px;
     margin: auto;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.381);
+    display: flex;  /*Ativando Flexbox no meu projeto*/
+    flex-direction: column; /* ficou melhor assim do que com o "row"*/
 }
 
 div{
