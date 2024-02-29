@@ -11,8 +11,8 @@ function verificar(){
         /* [0] é para masculino e [1] para feminino  */
         var idade = ano - Number(fano.value) // Valor do ano atual menos o valor digitado dentro do formulário
         var genero = '' //Aqui coloquei uma string vazia, pois depende do que for digitado pelo usuário
-        var img = document.createElement('img');
-            img.setAttribute('id', 'foto');
+        var img = document.createElement('img'); //Aqui é necessário para para criar imagens dinâmicas em JS
+            img.setAttribute('id', 'foto'); //Aqui precio criar uma "id" para ela
         if (fsex[0].checked){  //Se o gênero marcado(checado) for [0], atribuo a string Homem
             genero = 'Homem'
             if (idade >=0 && idade < 4){
@@ -52,7 +52,7 @@ function verificar(){
         }
         res.style.textAlign = 'center'
         res.innerHTML = `Detectamos ${genero} com ${idade} anos`
-        res.appendChild(img)
+        res.appendChild(img) //Esse comando é necessário para que a imagem apareça abaixoo da mensagem digitada acima
     }
 
 }
