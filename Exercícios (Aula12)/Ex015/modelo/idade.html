@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Idade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+
+    <section>
+        <div>
+            <p>Ano de Nascimento: <input type="number" name="txtano" id="txtano" required>
+            </p>
+            <fieldset>
+                <legend>Sexo</legend>
+                     <input type="radio" name="radsex" id="mas" required>
+                     <label for="mas">Masculino</label>  <!--Atribui a opção selecionada a um label-->
+                     <input type="radio" name="radsex" id="fem" required>
+                      <label for="fem">Feminino</label>
+                      <!--Preciso colocar o mesmo nome no "radio" se eu não tiver isso vai me permitir marcar ambos, com o mesmo nome ou é um ou outro-->
+            </fieldset>
+                
+            <p><input type="submit" value="Verificar" onclick="verificar()">
+            </p>
+        </div>
+        
+        <div id="res">
+            <p id="msg">Preencha os dados acima para ver o resultado</p>
+        </div>
+
+    </section>
+
+    <footer>
+        <p> &copy; Curso em Vídeo</p>  <!--"&copy" é o sinal de copyrigth-->
+    </footer>
+
+    <script src="script.js"></script> <!--"script src" cria um arquivo JS externo ao estilo do style do CSS-->
+</body>
+<footer>
+</footer>
+</html>
