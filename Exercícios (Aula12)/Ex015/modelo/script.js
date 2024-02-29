@@ -17,37 +17,37 @@ function verificar(){
             genero = 'Homem'
             if (idade >=0 && idade < 4){
                 //Bebe
-                img.setAttribute('src',"bebezinho.png")
+                img.setAttribute('src',"bebezinhon.png")
             }else if (idade >=4 && idade < 12){
                 //Criança
-                img.setAttribute('src',"menininho.png")
+                img.setAttribute('src',"menininhon.png")
             }else if(idade <21){
                 //Jovem
-                img.setAttribute('src',"menino.png")
+                img.setAttribute('src',"meninon.png")
             }else if (idade < 45){
                 //Adulto
-                img.setAttribute('src',"homem.png")
+                img.setAttribute('src',"homemn.png")
             } else{
                 //Idoso
-                img.setAttribute('src',"senhor.png")
+                img.setAttribute('src',"senhorn.png")
             }
         } else {
             genero = 'Mulher'
             if (idade >=0 && idade < 4){
                 //Bebe
-                img.setAttribute('src',"bebezinha.png")
+                img.setAttribute('src',"bebezinhan.png")
             }else if (idade >=4 && idade < 12){
                 //Criança
-                img.setAttribute('src',"menininha.png")
+                img.setAttribute('src',"menininhan.png")
             }else if(idade <21){
                 //Jovem
-                img.setAttribute('src',"menina.png")
+                img.setAttribute('src',"meninan.png")
             }else if (idade < 45){
                 //Adulta
-                img.setAttribute('src',"mulher.png")
+                img.setAttribute('src',"mulhern.png")
             } else{
                 //Idosa
-                img.setAttribute('src',"senhora.png")
+                img.setAttribute('src',"senhoran.png")
             }
         }
         res.style.textAlign = 'center'
