@@ -22,3 +22,6 @@ footer{
     text-align: center;
     font-style: italic;
 }
+footer a:hover{
+    color: green; 
+}
