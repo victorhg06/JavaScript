@@ -1,0 +1,46 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-image: url(imagens/fundo-madeira.jpg);
+}
+
+header, h1{
+    color: rgb(255, 208, 0);
+    padding:10px ;
+    font-size: 1,5em;
+    letter-spacing: 8px;
+    text-align: center;
+}
+
+#form{
+    padding: 50px;
+    text-align: center;
+    background-image: url();
+    background-size:cover;
+    background-position: center, bottom;
+    display: block;
+    
+}
+
+h2{
+    padding: 20px;
+}
+
+ h2,p{
+    color: rgb(255, 208, 0);
+}
+
+#resultado{
+    text-align: center;
+    padding-bottom: 105px;
+}
+
+footer{
+    text-align: center;
+    background-color:#1B5936;
+    padding: 0px;
+    margin: 10px 1px 1px 1px;
+}

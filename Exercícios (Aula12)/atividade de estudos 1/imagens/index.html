@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+        <p id="paragrafo">Acesse o <a id="link1" href="http://google.com.br/" target="_blank"> site
+        </a></p>
+        <p id="p2"><img id="imagem" src="foto1.jpg" alt=""></p>
+    </div>
+
+    <script>
+        var imagem = document.getElementById('imagem');
+        imagem.src = 'paisagem.jpg';
+
+        var link = document.getElementById('link1');
+        link.innerText = 'http://exemplo.com.br/'
+        link.href = 'http://exemplo.com.br/';
+
+        var paragrafo = document.getElementById('paragrafo');
+        paragrafo.style.color = 'red';
+    </script>
+
+</body>
+</html>
